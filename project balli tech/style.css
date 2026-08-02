@@ -1,0 +1,538 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fdd835;
+}
+
+.logo span {
+  color: #fff;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fdd835;
+}
+
+.apply-btn {
+  background-color: #fdd835;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.apply-btn:hover {
+  background-color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.hero-text h1 span {
+  color: #fdd835;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.learn-btn {
+  background-color: transparent;
+  border: 2px solid #fdd835;
+  color: #fdd835;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.learn-btn:hover {
+  background-color: #fdd835;
+  color: #000;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  background-color: #111;
+  padding: 40px 0;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.about-text h1 span {
+  color: #fdd835;
+}
+
+.about-text p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+/* Page Title */
+.page-title {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.page-title h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.page-title h1 span {
+  color: #fdd835;
+}
+
+/* Two Column Layout */
+.why-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.why-text {
+  max-width: 50%;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.why-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+/* Job Section */
+.job-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  background-color: #0a0a0a;
+}
+
+.job-left {
+  width: 55%;
+  color: #fff;
+}
+
+.job-left h2 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.job-left h1 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.job-left h1 span {
+  color: #fdd835;
+}
+
+.job-left h3 {
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+.job-left ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.job-left ul li {
+  margin-bottom: 8px;
+}
+
+/* Side Box */
+.job-right {
+  width: 35%;
+}
+
+.side-box {
+  border: 1px solid #fdd835;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+}
+
+.box-item {
+  margin-bottom: 20px;
+}
+
+.box-item h4 {
+  color: #fdd835;
+  margin-bottom: 5px;
+}
+
+.box-item p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Responsibilities Section */
+.responsibilities {
+  background-color: #111;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.responsibilities h2 {
+  color: #fdd835;
+  margin-bottom: 30px;
+}
+
+.resp-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.resp-card {
+  background-color: #1a1a1a;
+  width: 220px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.resp-card:hover {
+  transform: translateY(-5px);
+}
+
+.resp-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.resp-card p {
+  color: #ccc;
+  font-size: 15px;
+}
+/* Contact / Apply Section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  background-color: #0a0a0a;
+}
+
+.contact-left {
+  width: 50%;
+  color: #fff;
+}
+
+.contact-left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-left h1 span {
+  color: #fdd835;
+}
+
+.contact-left p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.social h3 {
+  color: #fdd835;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+/* Right Side Apply Box */
+.contact-right {
+  width: 40%;
+}
+
+.apply-box {
+  border: 1px solid #fdd835;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+}
+
+.apply-box h2 {
+  color: #fdd835;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.apply-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-box input,
+.apply-box select,
+.apply-box textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.apply-box input::placeholder,
+.apply-box textarea::placeholder {
+  color: #888;
+}
+
+.submit-btn {
+  background-color: #fdd835;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submit-btn:hover {
+  background-color: #ffeb3b;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* For tablets and medium screens */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero,
+  .about,
+  .why-layout,
+  .job-section,
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text,
+  .about-text,
+  .why-text,
+  .job-left,
+  .contact-left {
+    max-width: 100%;
+  }
+
+  .hero-image img,
+  .about-image img,
+  .why-image img,
+  .job-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .info-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .job-right,
+  .contact-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .side-box,
+  .apply-box {
+    width: 100%;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .apply-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hero h1,
+  .about h1,
+  .why h1,
+  .job-left h1,
+  .contact-left h1 {
+    font-size: 24px;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .resp-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resp-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+
+  
+  
+  
+ 

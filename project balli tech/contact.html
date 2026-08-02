@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact / Apply - Balli Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">BALLI <span>TECH</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="why.html">Why Join Us</a>
+      <a href="jobs.html">Job Details</a>
+      <a href="contact.html" class="active">Contact Us</a>
+       <!-- Apply Now button inside nav -->
+    <button class="apply-btn" onclick="location.href='contact.html#apply'">Apply Now</button>
+    </nav>
+  </header>
+
+  <!-- Contact / Apply Section -->
+  <section class="contact-section">
+  <div class="contact-left">
+    <h1>READY TO <span>JOIN OUR TEAM?</span></h1>
+    <p>Take the next step in your career. Apply now and become a part of Balli Tech!</p>
+
+    <div class="contact-info">
+      <p><strong>💬 WhatsApp:</strong> 03155820242</p>
+      <p><strong>📧 Email:</strong> ballitech@gmail.com</p>
+      <p><strong>🌙 Shift:</strong> Night Shift (7 PM – 4 AM)</p>
+      <p><strong>💻 Work Mode:</strong> Work From Home (Remote)</p>
+    </div>
+    </div>
+  </div>
+
+  <!-- Right Box with Form -->
+  <div class="contact-right">
+    <div class="apply-box">
+      <h2>APPLY NOW</h2>
+      <form id="applyForm" method="POST" action="sendmail.php">
+  <input type="text" name="name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="text" name="phone" placeholder="Phone Number" required />
+  <select name="experience" required>
+    <option value="">Experience (Years)</option>
+    <option value="1">1 Year</option>
+    <option value="2">2 Years</option>
+    <option value="3">3 Years</option>
+    <option value="4">4+ Years</option>
+  </select>
+  <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+  <button type="submit" class="submit-btn">Submit Application</button>
+</form>
+
+
+      <!-- Success Message -->
+      <p id="successMessage" style="display:none; color:#fdd835; font-weight:bold; margin-top:15px;">
+        ✅ Your application is submitted successfully!
+      </p>
+    </div>
+  </div>
+</section>
+<script>
+  document.getElementById("applyForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent reload
+    document.getElementById("successMessage").style.display = "block"; // show success
+    this.reset(); // clear form fields
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Balli Tech | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
